@@ -13,7 +13,8 @@ lint:
 selfcheck:
 	poetry check
 
-check: selfcheck test lint
+check: 
+	selfcheck test lint
 
 build: 
 	poetry build
@@ -21,10 +22,16 @@ build:
 brain-games:
 	poetry run brain-games
 
+bg:
+	poetry run brain-games
+
 publish:
 	poetry publish --dry-run
 
 package-install:
 	python3 -m pip install --user dist/*.whl
+
+repackage-install:
+	pip install --user --force-reinstall dist/*.whl
 
 .PHONY: install test lint selfcheck check build
