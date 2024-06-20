@@ -25,6 +25,9 @@ brain-games:
 bg:
 	poetry run brain-games
 
+brain-even, be:
+	poetry run brain-even
+
 publish:
 	poetry publish --dry-run
 
