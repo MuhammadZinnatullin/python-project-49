@@ -8,11 +8,11 @@ def calc():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print('What is the result of the expression?')
+    symbols = '+-*'
     while i < 4:
         a = random.randint(1, 40)
         b = random.randint(1, 20)
         symb_ind = random.randint(0, 2)
-        symbols = '+-*'
         qest = str(a) + ' ' + symbols[symb_ind] + ' ' + str(b)
         ansver = prompt.integer(f'Question: {qest} \nYour answer: ')
 

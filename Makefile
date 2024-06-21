@@ -28,6 +28,9 @@ brain-even, be:
 brain-calc, bc:
 	poetry run brain-calc
 
+brain-gcd:
+	poetry run brain-gcd
+
 publish:
 	poetry publish --dry-run
 
