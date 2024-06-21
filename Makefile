@@ -8,7 +8,7 @@ test-coverage:
 	poetry run pytest --cov=hexlet_python_package --cov-report xml
 
 lint:
-	poetry run flake8 hexlet_python_package
+	 poetry run flake8 brain_games
 
 selfcheck:
 	poetry check
@@ -19,14 +19,14 @@ check:
 build: 
 	poetry build
 
-brain-games:
-	poetry run brain-games
-
-bg:
+brain-games, bg:
 	poetry run brain-games
 
 brain-even, be:
 	poetry run brain-even
+
+brain-calc, bc:
+	poetry run brain-calc
 
 publish:
 	poetry publish --dry-run

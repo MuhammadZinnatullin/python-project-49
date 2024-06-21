@@ -1,5 +1,7 @@
 import random
 import prompt
+from brain_games.my_mod import simile
+
 
 def even():
     i = 1
@@ -7,22 +9,12 @@ def even():
     print(f'Hello, {name}!')
     print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
     while i < 4:
-        random_number = random.randint(1, 20)
+        random_number = random.randint(1, 50)
         ansver = prompt.string(f'Question: {random_number} \nYour answer: ')
         if random_number % 2 == 0:
-            if ansver == 'yes':
-                print('Correct!')
-            else: 
-                print(f'\"{ansver}\" is wrong answer ;(. Correct answer was \"yes\".')
-                print(f'Let\"s try again, {name}!')
-                return
+            simile(name, ansver, 'yes')
         else:
-            if ansver == 'no':
-                print('Correct!')
-            else: 
-                print(f'\"{ansver}\" is wrong answer ;(. Correct answer was \"no\".')
-                print(f'Let\"s try again, {name}!')
-                return
+            simile(name, ansver, 'no')
         i += 1
     print(f'Congratulations, {name}!')
 
