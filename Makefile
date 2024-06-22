@@ -31,6 +31,9 @@ brain-calc, bc:
 brain-gcd:
 	poetry run brain-gcd
 
+brain-progression:
+	poetry run brain-progression
+
 publish:
 	poetry publish --dry-run
 
@@ -39,5 +42,10 @@ package-install:
 
 repackage-install:
 	pip install --user --force-reinstall dist/*.whl
+
+asc:
+	asciinema rec --overwrite demo.cast
+url:
+	asciinema upload demo.cast
 
 .PHONY: install test lint selfcheck check build
