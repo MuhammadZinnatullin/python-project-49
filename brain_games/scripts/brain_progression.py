@@ -6,7 +6,7 @@ from brain_games.my_mod import simile
 def progression():
     i = 1
     name = prompt.string('May I have your name? ')
-    print(f'HelloP, {name}!')
+    print(f'Hello, {name}!')
     print('What number is missing in the progression?')
     while i < 4:
         one = random.randint(0, 30)             # первый элемент
