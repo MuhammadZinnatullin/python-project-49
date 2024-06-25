@@ -12,7 +12,8 @@ def progression():
         one = random.randint(0, 30)             # первый элемент
         step = random.randint(1, 15)
         quantity = random.randint(5, 15)        # длинна последовательности
-        rnd_ind = random.randint(0, quantity - 1)  # индекс пропущенного элемента
+        # индекс пропущенного элемента:
+        rnd_ind = random.randint(0, quantity - 1)
         str_question = ''                       # строка вывода прогрессии
         for j in range(quantity):
             if j == rnd_ind:
